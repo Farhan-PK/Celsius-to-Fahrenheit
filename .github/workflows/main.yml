@@ -18,4 +18,4 @@ jobs:
       - name: Setup Surge
         run: npm install --global surge
       - name: Execute Deployment with Surge
-        run: surge ./ responsible-sink.surge.sh --token ${{ secrets.TOKEN }}
+        run: surge ./ responsible-sink.surge.sh --token ${{ secrets.Test_Token }}
