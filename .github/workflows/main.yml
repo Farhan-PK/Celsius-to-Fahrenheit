@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: '12'
       - name: Setup Surge
-        run: npm install --global surge
+        run: npm install -g surge
       - name: Execute Deployment with Surge
         run: surge ./ https://farhantest.surge.sh/ --token ${{ secrets.TEST_TOKEN }}
